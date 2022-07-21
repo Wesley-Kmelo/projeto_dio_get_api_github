@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Consumindo api GitHub com React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto desenvolvido para consumo da api do GITHub, utilizando conceitos aprendidos no curso [TQI FullStack ](https://www.dio.me/bootcamp/tqi-fullstack-developer)Developer ministrado na plataforma de cursos online da [Digital Innovation One](https://www.dio.me/)
 
-## Available Scripts
+## Scripts
 
-In the project directory, you can run:
+Nesse projeto foram utilizados:
 
-### `npm start`
+- create-react-app (*utilizando npm*)
+- styled-components
+- axios
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Os styled-components foram utilizados para facilitar a criação de componentes estilizados através de códigos JavaScript.Sua documentação é bem rica e vale a pena dar uma conferida *[aqui](https://styled-components.com/docs)*.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O axios é um tipo de protocolo de comunicação para o navegador que facilita o consumo de api's. Embora o Javascript tenha um método nativo *(fetch)*, o axios tem uma grande vantagem justamente por incorporar o fetch e facilitar a conversão do JSON em formato que possa ser trabalhado.
 
-### `npm test`
+Para criar a base do app, no terminal basta digitar : 
+> *`npx create-react-app nome_do_app`*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Esse projeto tem 3  divs encapsuladas . A primeira div tem um campo com um input e um botão *( todos componentes reutilizáveis conforme as boas práticas do React )* solicitando que seja digitado o nome do perfil.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Já a segunda div apresenta elementos nomeados com *"Aguardando ..."* até que um nome de perfil existente seja digitado . Com isso essa div recebe as infos do perfil, como nome , bio e avatar.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Já a terceira div recebe os repositórios do perfil com os links para os respectivos correspondentes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Caso queira, pode fazer um clone deste repositório e executar em [http://localhost:3000](http://localhost:3000) pra ver em funcionamento.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para usar o styled-components deverá instalar no seu projeto primeiro: 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+com npm:
+> *`npm install --save styled-components`* 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+com yarn:
+> *`yarn add styled-components`*
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Em seguida , a instalação do axios...
+>*`npm install axios`*
 
-### Code Splitting
+> *`yarn add axios`*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Para saber mais 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Você pode acessar a documentação do  [ React App ](https://pt-br.reactjs.org/docs/getting-started.html).
 
-### Making a Progressive Web App
+Sobre os [Styled Components ](https://styled-components.com/docs).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Sobre o [Axios](https://axios-http.com/ptbr/docs/intro)
