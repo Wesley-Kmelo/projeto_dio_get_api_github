@@ -10,4 +10,8 @@ export const EntradaDados = styled.input`
     background-color: aliceblue;
     border-radius: 12px;
     
+    @media screen and (min-width: 200px) and (max-width: 680px){
+        height: 20%;
+        width: 88%;
+    }
 `

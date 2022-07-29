@@ -18,11 +18,13 @@ Para criar a base do app, no terminal basta digitar :
 > *`npx create-react-app nome_do_app`*
 
 
-Esse projeto tem 3  divs encapsuladas . A primeira div tem um campo com um input e um botão *( todos componentes reutilizáveis conforme as boas práticas do React )* solicitando que seja digitado o nome do perfil.
+Esse projeto tem 3  componentes encapsulados em uma div. O primeiro componente tem um campo com um input e um botão *( todos componentes reutilizáveis conforme as boas práticas do React )* solicitando que seja digitado o nome do perfil.
 
-Já a segunda div apresenta elementos nomeados com *"Aguardando ..."* até que um nome de perfil existente seja digitado . Com isso essa div recebe as infos do perfil, como nome , bio e avatar.
+Já o segundo componente apresenta elementos nomeados com *"Aguardando ..."* até que um nome de perfil existente seja digitado . Com isso, esse componente recebe as infos do perfil, como nome , bio e avatar.
 
-Já a terceira div recebe os repositórios do perfil com os links para os respectivos correspondentes.
+Já o terceiro componente recebe os repositórios do perfil com os links para os respectivos correspondentes.
+
+Erros como usuário inexistente ou nenhum usuário digitado, já foram tratados.
 
 
 
